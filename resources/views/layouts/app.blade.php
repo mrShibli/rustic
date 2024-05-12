@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
     @vite('resources/css/app.css')
     <style>
         body {
@@ -22,8 +23,13 @@
             font-optical-sizing: auto;
             font-weight: <weight>;
             font-style: normal;
-
         }
+        .viaoda {
+            font-family: "Viaoda Libre", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
     </style>
 </head>
 
