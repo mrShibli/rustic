@@ -21,13 +21,13 @@
                 </div></a>
                 <div class="flex flex-row sm:mt-5 mt-3 content-center md:gap-5 gap-3">
                     <div>
-                        <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button>
+                        <a href="{{ route('menu') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button> </a>
                     </div>
                     <div>
                         <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button>
                     </div>
                     <div>
-                        <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button>
+                        <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
                     </div>
                 </div>
             </div>

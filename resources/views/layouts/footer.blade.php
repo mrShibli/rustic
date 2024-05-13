@@ -1,5 +1,5 @@
-<section class="pt-10 bg-[#3d2815] flex flex-col justify-center items-center">
-    <div class="max-w-[1500px] px-[5%] flex flex-col md:flex-row justiy-between items-start  gap-8 md:gap-20">
+<section class="p-7 bg-[#3d2815] flex flex-col justify-center items-center">
+    {{-- <div class="max-w-[1500px] px-[5%] flex flex-col md:flex-row justiy-between items-start  gap-8 md:gap-20">
 
         <div class="flex-1">
             <h3 class="text-3xl py-1 text-slate-200 viaoda">About us</h3>
@@ -11,7 +11,7 @@
                 produce that suits the needs of any season or occasion.
 
             </p>
-        </div>
+        </div> --}}
 
         <div class="flex-1">
             <h3 class="text-3xl py-1 text-slate-200 viaoda">Contact info</h3>

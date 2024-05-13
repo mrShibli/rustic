@@ -24,7 +24,7 @@
                         <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button>
                     </div>
                     <div>
-                        <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button>
+                        <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
 
     <section class="bg-[#111d22] text-white">
         <div class="sm:w-[90%] w-full mx-auto md:p-14 p-5 flex md:flex-row flex-col justify-between items-center">
-            <img class=" p-2 md:w-[35%] w-full !rounded-t-[50%]"
+            <img class="h-[400px] p-2 md:w-[35%] w-full !rounded-t-[50%]"
                 src="{{ asset('img/h2-sec3-img1.jpg') }}" alt="">
             <div class="md:w-[40%] w-full sm:m-auto mt-10">
                 <h1 class="text-[20px]">ABOUT US</h1>

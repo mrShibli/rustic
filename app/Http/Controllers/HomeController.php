@@ -13,4 +13,8 @@ class HomeController extends Controller
     public function menu(){
         return view('menu.menu');
     }
+
+    public function contact(){
+        return view('contuct.contuct');
+    }
 }
