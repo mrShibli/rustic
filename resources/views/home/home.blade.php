@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="md:h-[100vh] h-[50vh] w-full bg-cover relative bg-center"
-        style="background-image: url({{ asset('img/home.webp') }})">
+        style="background-image: url({{ asset('img/Screenshot_1xd.png') }})">
         <div class="bg-[#102b2a] bg-opacity-10 absolute w-full h-full"></div>
         <header class="grid grid-cols-1 divide-y pt-3 divide-[#bc9b75] text-white w-[98%] mx-auto">
             <div class="mb-1 flex justify-between font-light md:text-[12px] text-[9px]">
@@ -21,7 +21,7 @@
                         <a href="{{ route('menu') }}"><button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button></a> 
                     </div>
                     <div>
-                        <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button>
+                        <a href="{{ route('booking') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button> </a>
                     </div>
                     <div>
                         <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
@@ -42,7 +42,7 @@
 
     <section class="bg-[#111d22] text-white">
         <div class="sm:w-[90%] w-full mx-auto md:p-14 p-5 flex md:flex-row flex-col justify-between items-center">
-            <img class="h-[400px] p-2 md:w-[35%] w-full !rounded-t-[50%]"
+            <img class="h-[500px] p-2 md:w-[35%] w-full !rounded-tl-[50px] !rounded-br-[50px] border-[1px] border-white"
                 src="{{ asset('img/h2-sec3-img1.jpg') }}" alt="">
             <div class="md:w-[40%] w-full sm:m-auto mt-10">
                 <h1 class="text-[20px]">ABOUT US</h1>

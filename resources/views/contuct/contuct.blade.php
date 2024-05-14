@@ -21,7 +21,7 @@
                     <a href="{{ route('menu') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button> </a>
                 </div>
                 <div>
-                    <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button>
+                    <a href="{{ route('booking') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button> </a>
                 </div>
                 <div>
                     <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
@@ -56,7 +56,7 @@
         </div>
     </div>
 </section>
-<div class="mt-72">
+<div class="mt-96">
 </div>
 @include('layouts.footer')
 

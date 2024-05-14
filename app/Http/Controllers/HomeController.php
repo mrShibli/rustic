@@ -17,4 +17,8 @@ class HomeController extends Controller
     public function contact(){
         return view('contuct.contuct');
     }
+    
+    public function booking(){
+        return view('booking.booking');
+    }
 }
