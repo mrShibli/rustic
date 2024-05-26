@@ -2,33 +2,31 @@
 
 @section('content')
 <section class="pb-[150px] w-full bg-cover relative bg-center bg-[#bc9b75]">
-    <div class="bg-[#102b2a] bg-opacity-10 absolute w-full h-full"></div>
-    <header class="grid grid-cols-1 divide-y pt-3 divide-[#bc9b75] text-white w-[98%] mx-auto">
-        <div class="mb-1 flex justify-between font-light md:text-[12px] text-[9px]">
-            <span>Wed-Sun: 9:30a-8p</span>
-            <span>+61 3 5208 1317</span>
-        </div>
-        <div></div>
-    </header>
-    <nav class="w-[100%] px-5 mx-auto sticky top-0 z-50 backdrop-blur-[5px]">
-        <div class="flex justify-between content-center ">
-            <div>
-                <a href="{{ route('index') }}"><img class="w-[70px] md:w-[100px]" src="{{ asset('img/Rustic Ram.png') }}"
-                        alt="" srcset="">
-            </div></a>
-            <div class="flex flex-row sm:mt-5 mt-3 content-center md:gap-5 gap-3">
+<div class="bg-[#102b2a] bg-opacity-10 absolute w-full h-full"></div>
+        <header class="grid grid-cols-1 divide-y pt-3 divide-[#bc9b75] text-white w-[98%] mx-auto">
+            <div class="mb-1 flex justify-between font-light md:text-[12px] text-[9px]">
+                <span>Wed-Sun: 9:30a-8p</span>
+                <span>+61 3 5208 1317</span>
+            </div>
+            <div></div>
+        </header>
+        <nav class="w-[100%] px-5 mx-auto">
+            <div class="flex justify-center content-center ">
                 <div>
-                    <a href="{{ route('menu') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button> </a>
-                </div>
-                <div>
-                    <a href="{{ route('booking') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button> </a>
-                </div>
-                <div>
-                    <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
+                    <a href="{{ route('index') }}"><img class="w-[70px] md:w-[200px]" src="{{ asset('img/Rustic Ram.png') }}"
+                            alt="" srcset="">
+                    </a>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <!-- <div class=" sticky top-0 z-50 backdrop-blur-[5px] flex flex-row sm:mt-5 mt-3 justify-center items-center content-center md:gap-5 gap-3">
+            <div>
+                <a href="{{ route('menu') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button> </a>
+            </div>
+            <div>
+                <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
+            </div>
+        </div> -->
     <main class="hero-font text-white md:w-[70%] w-[90%] mx-auto md:mt-10 mt-2">
         <div class="flex flex-row items-center gap-2 justify-center">
             <div class="bg-white w-10 h-[2px]"></div>

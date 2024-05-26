@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
+
 @endsection
 
 @section('content')
@@ -13,30 +14,28 @@
             </div>
             <div></div>
         </header>
-        <nav class="w-[100%] px-5 mx-auto sticky top-0 z-50 backdrop-blur-[5px]">
-            <div class="flex justify-between content-center ">
+        <nav class="w-[100%] px-5 mx-auto">
+            <div class="flex justify-center content-center ">
                 <div>
-                    <a href="{{ route('index') }}"><img class="w-[70px] md:w-[100px]" src="{{ asset('img/Rustic Ram.png') }}"
+                    <a href="{{ route('index') }}"><img class="w-[70px] md:w-[200px]" src="{{ asset('img/Rustic Ram.png') }}"
                             alt="" srcset="">
-                </div></a>
-                <div class="flex flex-row sm:mt-5 mt-3 content-center md:gap-5 gap-3">
-                    <div>
-                        <a href="{{ route('menu') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button> </a>
-                    </div>
-                    <div>
-                        <a href="{{ route('booking') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Booking</button> </a>
-                    </div>
-                    <div>
-                        <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
-                    </div>
+                    </a>
                 </div>
             </div>
         </nav>
+        <div class=" sticky top-0 z-50 backdrop-blur-[5px] flex flex-row sm:mt-5 mt-3 justify-center items-center content-center md:gap-5 gap-3">
+            <div>
+                <a href="{{ route('menu') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Menu</button> </a>
+            </div>
+            <div>
+                <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
+            </div>
+        </div>
         <main class="hero-font text-white md:w-[70%] w-[90%] mx-auto md:mt-10 mt-2">
             <p class="text-center viaoda lg:text-[90px] md:text-[50px] text-[25px]">Discover Our menu</p>
 
             <div id="book" class="w-full mx-auto py-3">
-                <div class="my-page" data-density="hard">
+                <div class="my-page">
                     <img src="{{ asset('img/WhatsApp Image 2024-05-12 at 7.59.12 PM.jpeg') }}" alt=""
                         class="h-full w-full">
 
@@ -107,10 +106,24 @@
 
 @section('script')
     <script type="module">
+         let widths = 0; // Initialize widths with a default value
+
+        if (window.matchMedia("(min-width: 600px)").matches) {
+            widths = 500;
+        }else if (window.matchMedia("(min-width: 400px)").matches){
+            widths = 400; // Define a value for smaller screens if needed   
+        }
+         else {
+            widths = 340; // Define a value for smaller screens if needed   
+        }
+
+        console.log(widths);
+
         const pageFlip = new St.PageFlip(document.getElementById('book'), {
-            width: 450, // required parameter - base page width
-            height: 650, // required parameter - base page height
+            width: widths, // required parameter - base page width
+            height: 650,   // required parameter - base page height
         });
+
 
         pageFlip.loadFromHTML(document.querySelectorAll('.my-page'));
     </script>
