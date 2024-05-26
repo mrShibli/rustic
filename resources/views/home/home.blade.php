@@ -3,8 +3,8 @@
 @section('content')
     <section class="md:h-[100vh] h-[50vh] w-full bg-cover relative bg-center"
         style="background-image: url({{ asset('img/Screenshot_1xd.png') }})">
-        <div class="bg-[#000000] bg-opacity-30 absolute w-full h-full"></div>
-        <header class="grid grid-cols-1 divide-y pt-3 divide-[#bc9b75] text-white w-[98%] mx-auto">
+        {{-- <div class="bg-[#000000] bg-opacity-30 absolute w-full h-full"></div> --}}
+        <header class="backdrop-brightness-50 grid grid-cols-1 divide-y pt-3 divide-[#bc9b75] text-white w-[98%] mx-auto">
             <div class="mb-1 flex justify-between md:text-[12px] text-[10px]">
                 <b>Wed-Sun: 9:30a-8p / Monday-Tuesday Closed</b>
                 <b class="flex md:gap-2"> <img class="md:w-[25px] w-[20px]"
@@ -12,7 +12,7 @@
             </div>
             <div></div>
         </header>
-        <nav class="w-[100%] px-5 mx-auto">
+        <nav class="w-[100%] backdrop-brightness-50 px-5 mx-auto">
             <div class="flex justify-center content-center ">
                 <div>
                     <a href="{{ route('index') }}"><img class="w-[70px] md:w-[200px]"
@@ -29,16 +29,19 @@
                     <a href="{{ route('contact') }}"> <button class="text-white md:text-[15px] text-[13px] mt-5">Contact</button> </a>
                 </div>
             </div> -->
-        <main class="hero-font text-white md:w-[40%] w-[80%] mx-auto md:mt-10 mt-2">
-            <h1 class="md:text-[60px] text-[22px]">-Dear</h1>
-            <p class="viaoda lg:text-[90px] md:text-[50px] text-[25px]">Welcome to</p>
-            <h1 class="viaoda lg:text-[120px] md:text-[100px] -mt-5 text-[44px] !font-extrabold text-[#ffb766] ml-16">
-                Rusticram</h1>
-            <a target="_blank"
-                href="https://www.google.com/maps/reserve/v/dine/c/9ftFcEbCNuE?source=pa&opi=89978449&hl=en-BD&gei=9rZLZu3RC-uI4-EPzoqo4As&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Drustic%2Bram%26oq%26gs_lcrp%3DEgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQsxNjQ3NjY3ajBqN6gCCLACAQ%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=1"
-                class="z-50 absolute md:text-md text-lg font-extrabold mt-2 md:ml-40 ml-32 uppercase bg-[#0e1730] border-solid border-[1px] border-[#ffb766] md:px-10 px-5 md:py-4 py-1 bg-opacity-50">Book
-                A Table</a>
-        </main>
+            <div class="backdrop-brightness-50 h-full">
+
+                <main class="hero-font text-white md:w-[40%] w-[80%] mx-auto md:pt-10 pt-2">
+                    <h1 class="md:text-[60px] text-[22px]">-Dear</h1>
+                    <p class="viaoda lg:text-[90px] md:text-[50px] text-[25px]">Welcome to</p>
+                    <h1 class="viaoda lg:text-[120px] md:text-[100px] -mt-5 text-[44px] !font-extrabold text-[#ffb766] ml-16">
+                        Rusticram</h1>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/reserve/v/dine/c/9ftFcEbCNuE?source=pa&opi=89978449&hl=en-BD&gei=9rZLZu3RC-uI4-EPzoqo4As&sourceurl=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Drustic%2Bram%26oq%26gs_lcrp%3DEgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQsxNjQ3NjY3ajBqN6gCCLACAQ%26sourceid%3Dchrome%26ie%3DUTF-8&ihs=1"
+                        class="z-50 absolute md:text-md text-lg font-extrabold mt-2 md:ml-40 ml-32 uppercase bg-[#0e1730] border-solid border-[1px] border-[#ffb766] md:px-10 px-5 md:py-4 py-1 bg-opacity-50">Book
+                        A Table</a>
+                </main>
+            </div>
     </section>
 
     <!-- <section class="bg-[#111d22] text-white">
