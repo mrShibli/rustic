@@ -1,0 +1,21 @@
+{
+  "public/img/hero.jpg": {
+    "file": "assets/hero-D2TaoakY.jpg",
+    "src": "public/img/hero.jpg"
+  },
+  "public/img/r32a-facade-Rustic-Ram-Cafe-Bar-and-Restaurant.jpg": {
+    "file": "assets/r32a-facade-Rustic-Ram-Cafe-Bar-and-Restaurant-CjLLZU3j.jpg",
+    "src": "public/img/r32a-facade-Rustic-Ram-Cafe-Bar-and-Restaurant.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BtEF2DEM.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-DkDdL2UM.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
